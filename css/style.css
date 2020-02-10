@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: fit-content;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    font-size: 30px;
+    margin: 0 0 15px;
+    font-weight: bold;
+}
+
+ul {
+    line-height: 1.5;
+    margin-left: 3%;
+}
+
+li {
+    padding: 0.5% 0;
+}
+
+code, pre {
+    background-color: #f6e1e113;
+    color: #ff677d;
+}
+
+code > pre {
+    margin-left: 3%;
+}
+
+/* navigation bar section */
+#navbar {
+    position: fixed;
+    background-color: #fafafa;
+    height: 100vh;
+    width: 255px;
+    padding: 1.5%;
+}
+
+.nav-link {
+    width: fit-content;
+}
+
+/* main document section */
+#main-doc {
+    margin-left: 300px;
+    padding: 1.5%;
+}
+
+.main-section > header {
+    position: relative;
+    right: 40px;
+}
+
+.setup-step-title {
+    font-size: 20px;
+}
+
+.os-type {
+    font-weight: bold;
+}
