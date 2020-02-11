@@ -2,16 +2,17 @@
     margin: 0;
     padding: 0;
     border: 0;
-    width: fit-content;
 }
 
 body {
     background-color: #fff;
+    width: 100vw;
+    font-size: 14px;
 }
 
 header {
-    font-size: 30px;
-    margin: 0 0 15px;
+    font-size: 1.25rem;
+    margin: 0 0 10px;
     font-weight: bold;
 }
 
@@ -35,32 +36,91 @@ code > pre {
 
 /* navigation bar section */
 #navbar {
-    position: fixed;
     background-color: #fafafa;
-    height: 100vh;
-    width: 255px;
-    padding: 1.5%;
+    position: sticky;
+    top: 0;
+    margin-bottom: 7px;
 }
 
-.nav-link {
-    width: fit-content;
+.navbar-brand {
+    margin: auto 0;
 }
 
 /* main document section */
 #main-doc {
-    margin-left: 300px;
+    margin-left: 3%;
     padding: 1.5%;
-}
-
-.main-section > header {
-    position: relative;
-    right: 40px;
-}
-
-.setup-step-title {
-    font-size: 20px;
+    width: fit-content;
+    max-width: 95vw;
 }
 
 .os-type {
     font-weight: bold;
+}
+
+/* data types section */
+.data-type-class {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+/* conditions section */
+.condition-type {
+    font-weight: 600;
+}
+
+/* DESKTOP AND LAPTOP VERSION */
+@media (min-width: 990px) {
+    * {
+        width: fit-content;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    header {
+        font-size: 30px;
+        margin: 0 0 15px;
+        font-weight: bold;
+    }
+
+    /* navigation bar section*/
+    #navbar{
+        position: fixed;
+        height: 100vh;
+        width: 255px;
+        padding: 1.5%;
+    }
+
+    .navbar, .navbar-nav {
+        display: block;
+    }
+
+    .nav-link {
+        width: fit-content;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+        margin: 0 0 15px;
+        font-weight: bold;
+        white-space: normal;
+    }
+
+    /* main document section */
+    #main-doc {
+        margin-left: 300px;
+        padding: 1.5%;
+        max-width: 78vw;
+    }
+
+    .main-section > header {
+        position: relative;
+        right: 40px;
+    }
+
+    .setup-step-title {
+        font-size: 20px;
+    }
 }
